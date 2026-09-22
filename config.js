@@ -1,5 +1,5 @@
 window.PRESELL_CONFIG = {
-  destinationUrl: "https://your-offer-link-here.com/?utm_source=tiktok",
+  destinationUrl: "https://usworldinfo.vercel.app",
   tiktokPixelId: "",
   redirectDelayMs: 800,
   security: {
