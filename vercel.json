@@ -1,9 +1,3 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/css/style.css", "destination": "/style.css" },
-    { "source": "/js/antibot.js", "destination": "/antibot.js" },
-    { "source": "/js/main.js", "destination": "/main.js" }
-  ]
+  "framework": "vite"
 }
