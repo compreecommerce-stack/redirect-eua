@@ -1,5 +1,5 @@
 export const PRESELL_CONFIG = {
-  destinationUrl: "https://usworldinfo.vercel.app",
+  destinationUrl: "https://usworldinfo.vercel.app/inicio",
   tiktokPixelId: "",
   redirectDelayMs: 800,
   security: {
